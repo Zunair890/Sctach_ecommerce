@@ -1,0 +1,16 @@
+<div class="w-full">
+    <div class="w-full aspect-square flex items-center justify-center bg-yellow-500 h-[160px]">
+        <% if (product.image) { %>
+            <img class="h-[80%] w-auto object-contain" src="<%= product.image %>" alt="<%= product.name %>">
+        <% } %>
+    </div>
+    <div class="flex justify-between bg-red-500 items-center px-4 py-2 text-white">
+        <div>
+            <h3 class="font-medium"><%= product.name %></h3>
+            <h4>₹ <%= product.price %></h4>
+        </div>
+        <button class="w-6 h-6 flex items-center justify-center rounded-full bg-white">
+            <i class="ri-add-line text-black"></i>
+        </button>
+    </div>
+</div> 
